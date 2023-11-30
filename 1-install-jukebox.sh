@@ -9,6 +9,3 @@
 
 # Install - future3/main
 ssh pi@pi.local "cd; bash <(wget -qO- https://raw.githubusercontent.com/MiczFlor/RPi-Jukebox-RFID/future3/develop/installation/install-jukebox.sh)"
-
-# Stop Jukebox
-ssh pi@pi.local "systemctl --user stop jukebox-daemon"
