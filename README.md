@@ -3,7 +3,7 @@
 This repo is my personal configuration of the [Phoniebox Project](https://phoniebox.de/)
 The target of this repo is to do a reproducable installation of the box including all docs of my build.
 
-Thanks a lot on the Open Source Team (a lot of dad's and weekend coders) of the Phoniebox! Another big thank you for the infos described in his [blog []](https://splittscheid.de/phoniebox-bauanleitung-toniebox-alternative/) building its own box is [splitti](https://github.com/splitti/)
+Thanks a lot on the Open Source Team (a lot of dad's and weekend coders) of the Phoniebox! Another big thank you for the infos described in his [blog](https://splittscheid.de/phoniebox-bauanleitung-toniebox-alternative/) building its own box is [splitti](https://github.com/splitti/)
 
 ## My Hardware:
 - [Raspberry Pi 4 (8GB Ram)](https://geizhals.de/raspberry-pi-4-modell-b-v54547.html)
@@ -16,6 +16,11 @@ Thanks a lot on the Open Source Team (a lot of dad's and weekend coders) of the 
 - [GPIO Extension Board](https://geizhals.de/1940125090)
 - [Extertnal Charging cabel](https://geizhals.de/2223961498)
 - [PowerBank](https://geizhals.de/3502046731)
+
+## My Software
+- Raspberry Pi OS Lite (32-bit) | Bookworm
+- Phoniebox future3 v3.3
+- Configs and OS Tunings are inside this repo!
 
 ## Installation
 
