@@ -19,7 +19,6 @@ def download_songs() -> None:
         moved_mp3_file = directory / mp3_file.name
         if not moved_mp3_file.exists():
             mp3_file.rename(moved_mp3_file)
-        mp3_file.unlink()
 
 
 if __name__ == "__main__":
