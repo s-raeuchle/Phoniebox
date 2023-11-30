@@ -23,12 +23,11 @@ Thanks a lot on the Open Source Team (a lot of dad's and weekend coders) of the 
 - Configs and OS Tunings are inside this repo!
 
 ## Installation
-
 1. Build a 32-bit! Raspberry Pi OS Lite using [Raspberry Pi Imager](https://www.raspberrypi.com/software/). **Set Wifi/Host Settings to make your life easyer**
 2. Run the bash scripts in this repo one by one starting from 0
 3. done!
 
 ## Music
-This repo contains a downloader app. Fill the youtube.csv inside the folder and run the app.py do get the music you want to listen on the phoniebox downloaded and prepared in folders.
+This repo contains a [downloader app](./downloader). Fill the [youtube.csv](./downloader/youtube.csv) run the appplication to get the music you want to listen on the phoniebox, downloaded and prepared in folders.
 
 Some notes during my process: [here](./NOTES.md)
