@@ -14,10 +14,10 @@
 # /boot/firmware/overlays/README
 
 # Automatically load overlays for detected cameras
-camera_auto_detect=1
+# camera_auto_detect=1
 
 # Automatically load overlays for detected DSI displays
-display_auto_detect=1
+# display_auto_detect=1
 
 # Automatically load initramfs files, if found
 auto_initramfs=1
@@ -47,7 +47,13 @@ otg_mode=1
 
 [all]
 # ENABLE HifiBerry MiniAmp
-dtoverlay=hifiberry-dac
+# dtoverlay=hifiberry-dac
 
 # Shutdown GPIO Button
-dtoverlay=gpio-shutdown
+dtoverlay=hifiberry-dac,gpio-shutdown,gpio_pin=17,active_low=1,gpio_pull=up,debounce=1000
+
+# 32-Bit Mode (future3)
+arm_64bit=0 
+
+# Disable Bluetooth
+dtoverlay=disable-bt

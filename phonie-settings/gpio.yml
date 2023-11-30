@@ -1,0 +1,35 @@
+# PIN Overview: https://gpiozero.readthedocs.io/en/stable/recipes.html#pin-numbering
+pin_factory:
+  type: rpigpio.RPiGPIOFactory
+input_devices:
+  TogglePlayback:
+    type: Button
+    kwargs:
+      pin: 11 # GPIO11
+    actions:
+      on_press:
+        alias: toggle
+  NextLoudButton:
+    type: ShortLongPressButton
+    kwargs:
+      pin: 16 # GPIO12
+      hold_time: 1
+      hold_repeat: true
+    actions:
+      on_short_press:
+        alias: next_song
+      on_long_press:
+        alias: change_volume
+        args: +3
+  PrevQuietButton:
+    type: ShortLongPressButton
+    kwargs:
+      pin: 26  # GPIO26
+      hold_time: 1
+      hold_repeat: true
+    actions:
+      on_short_press:
+        alias: prev_song
+      on_long_press:
+        alias: change_volume
+        args: -3
