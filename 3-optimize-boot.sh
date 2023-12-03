@@ -8,7 +8,6 @@ ssh pi@pi.local "sudo update-rc.d exim4 remove -y"
 ssh pi@pi.local "sudo systemctl disable keyboard-setup.service \
     && sudo systemctl disable nmbd.service \
     && sudo systemctl disable NetworkManager-wait-online.service \
-    && sudo systemctl disable keyboard-setup.service \
     && sudo systemctl disable triggerhappy.service \
     && sudo systemctl disable dphys-swapfile.service \
     && sudo systemctl disable hciuart.service \
@@ -16,6 +15,7 @@ ssh pi@pi.local "sudo systemctl disable keyboard-setup.service \
     && sudo systemctl disable raspi-config.service \
     && sudo systemctl disable avahi-daemon.service \
     && sudo systemctl disable sys-kernel-debug.mount \
+    && sudo systemctl disable ModemManager.service \
     && sudo systemctl disable systemd-udev-trigger.service \
     && sudo systemctl disable rpi-eeprom-update.service \
     && sudo systemctl disable systemd-journald.service \
