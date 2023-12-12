@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Audio files
+scp ./flare.wav  pi@pi.local:/home/pi/RPi-Jukebox-RFID/resources/audio/flare.wav
+scp ./gate.wav  pi@pi.local:/home/pi/RPi-Jukebox-RFID/resources/audio/gate.wav
+scp ./wunderclock.wav  pi@pi.local:/home/pi/RPi-Jukebox-RFID/resources/audio/wunderclock.wav
+scp ./garrison.wav  pi@pi.local:/home/pi/RPi-Jukebox-RFID/resources/audio/garrison.wav
+scp ./convert2.wav  pi@pi.local:/home/pi/RPi-Jukebox-RFID/resources/audio/convert2.wav
+
 # Stop Jukebox
 ssh pi@pi.local "systemctl --user stop jukebox-daemon"
 
@@ -7,11 +14,10 @@ ssh pi@pi.local "systemctl --user stop jukebox-daemon"
 cat ./phonie-settings/jukebox.yaml | ssh pi@pi.local "sudo tee /home/pi/RPi-Jukebox-RFID/shared/settings/jukebox.yaml"
 
 # Jukebox GPIO Config
-cat ./phonie-settings/gpio.yml | ssh pi@pi.local "sudo tee /home/pi/RPi-Jukebox-RFID/shared/settings/gpio.yml"
-
-# Start Jukebox in console and check the log output (optional)
-# $ ./src/jukebox/run_jukebox.py
-# and if OK, press Ctrl-C and restart the service
+cat ./phonie-settings/gpio.yaml | ssh pi@pi.local "sudo tee /home/pi/RPi-Jukebox-RFID/shared/settings/gpio.yaml"
 
 # Restart the service
 ssh pi@pi.local "systemctl --user start jukebox-daemon"
+
+# MPD Adjustments
+cat ./pi/mpd.conf | ssh pi@pi.local "sudo tee /home/pi/.config/mpd/mod.conf"
