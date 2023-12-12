@@ -6,3 +6,7 @@ Requirements:
 - [Python](https://www.python.org/)
 - [Poetry](https://python-poetry.org/)
 - [ffmpeg](https://ffmpeg.org/download.html)
+
+
+Radio function?
+- https://www.radio-browser.info/
