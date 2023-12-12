@@ -12,8 +12,14 @@ arm_boost=1
 
 
 [all]
-# Shutdown GPIO Button + Enable Hifiberry Miniamp
-dtoverlay=hifiberry-dac,gpio-shutdown,gpio_pin=17,active_low=1,gpio_pull=up,debounce=1000
+# Enable Hifiberry Miniamp
+dtoverlay=hifiberry-dac
+
+# Shutdown GPIO Button
+dtoverlay=gpio-shutdown,gpio_pin=17
+
+# Status LED: https://howchoo.com/pi/build-a-simple-raspberry-pi-led-power-status-indicator/
+# enable_uart=1
 
 # 32-Bit Mode (future3 Phoniebox required)
 arm_64bit=0
@@ -32,3 +38,7 @@ disable_splash=1
 
 # Initial Turbo in seconds; max. 60 seconds
 initial_turbo=30
+## Jukebox Settings
+disable_splash=1
+
+dtparam=i2c_arm=on

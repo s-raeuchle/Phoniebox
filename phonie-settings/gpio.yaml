@@ -6,30 +6,33 @@ input_devices:
     type: Button
     kwargs:
       pin: 11 # GPIO11
+      bounce_time: 0.05
     actions:
       on_press:
         alias: toggle
   NextLoudButton:
     type: ShortLongPressButton
     kwargs:
-      pin: 16 # GPIO12
+      pin: 16 # GPIO16
       hold_time: 1
       hold_repeat: true
+      bounce_time: 0.05
     actions:
       on_short_press:
         alias: next_song
       on_long_press:
         alias: change_volume
-        args: +3
+        args: +5
   PrevQuietButton:
     type: ShortLongPressButton
     kwargs:
       pin: 26  # GPIO26
       hold_time: 1
       hold_repeat: true
+      bounce_time: 0.05
     actions:
       on_short_press:
         alias: prev_song
       on_long_press:
         alias: change_volume
-        args: -3
+        args: -5
