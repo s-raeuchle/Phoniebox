@@ -8,7 +8,9 @@ Thanks a lot on the Open Source Team (a lot of dad's and weekend coders) of the 
 ![Phoniebox Top](./doc/phonie_closed_top.jpg)
 ![Phoniebox Opened](./doc/phonie_open_front.jpg)
 
-<video src='./doc/phoniebox.mp4' width=480/>
+<video width="720" height="480" controls>
+  <source src="./doc/phoniebox.mp4" type="video/mp4">
+</video>
 
 ## My Hardware:
 - [Raspberry Pi 4 (8GB Ram)](https://geizhals.de/raspberry-pi-4-modell-b-v54547.html)
