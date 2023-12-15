@@ -6,9 +6,16 @@ The target of this repo is to do a reproducable installation of the box includin
 Thanks a lot on the Open Source Team (a lot of dad's and weekend coders) of the Phoniebox! Another big thank you for the infos described in his [blog](https://splittscheid.de/phoniebox-bauanleitung-toniebox-alternative/) building its own box is [splitti](https://github.com/splitti/)
 
 ![Phoniebox Top](./doc/phonie_closed_top.jpg)
-![Phoniebox Opened](./doc/phonie_open_front.jpg)
-![Phoniebox Back](./doc/phonie_closed_back.jpg)
-![Phoniebox Opened On](./doc/phonie_offen_on.jpg)
+![Phoniebox Opened](./doc/phonie_bottons.jpg)
+![Phoniebox Back](./doc/phonie_back.jpg)
+![Phoniebox Opened On](./doc/phonie_open_top.jpg)
+
+## Repository Structure
+
+- **pi**: this folder includes configurations related to the Raspberian OS and software.
+- **phonie-settings**: contains configs and files editing the phoniebox software.
+- **doc**: images, videos documenting the build
+- **downloader**: downloading mp3 from youtube project
 
 ## My Hardware:
 - [Raspberry Pi 4 (8GB Ram)](https://geizhals.de/raspberry-pi-4-modell-b-v54547.html)
@@ -48,6 +55,17 @@ After a clean installation of Raspberry OS and the Phoniebox I had a boot time o
 - [x] raspberrypi Firmwareupdate (run: `sudo rpi-update`)
 - [x] disabled services ([3-optimize-boot.sh](./3-optimize-boot.sh))
 
+
+## Construction Phase
+![Phoniebox Empty](./doc/build_empty-box.jpg)
+![Phoniebox Laimen](./doc/build_structure_laimen.jpg)
+![Phoniebox Laimen II](./doc/build_structure_laimen_II.jpg)
+![Phoniebox Box Mesh](./doc/build_draw_box_mesh.jpg)
+![Phoniebox Box Position](./doc/build_check_box_position.jpg)
+![Phoniebox Box Mesh](./doc/build_check_double_bottom.jpg)
+
+## GPIO Plan
+![GPIO](./GPIO-Plan.png)
 
 ## Sources
 
