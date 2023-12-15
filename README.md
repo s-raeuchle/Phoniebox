@@ -12,10 +12,10 @@ Thanks a lot on the Open Source Team (a lot of dad's and weekend coders) of the 
 
 ## Repository Structure
 
-- **pi**: this folder includes configurations related to the Raspberian OS and software.
-- **phonie-settings**: contains configs and files editing the phoniebox software.
-- **doc**: images, videos documenting the build
-- **downloader**: downloading mp3 from youtube project
+- **[pi](./pi/)**: this folder includes configurations related to the Raspberian OS and software.
+- **[phonie-settings](./phonie-settings/)**: contains configs and files editing the phoniebox software.
+- **[doc](./doc/)**: images, videos documenting the build
+- **[downloader](./downloader/)**: downloading mp3 from youtube project
 
 ## My Hardware:
 - [Raspberry Pi 4 (8GB Ram)](https://geizhals.de/raspberry-pi-4-modell-b-v54547.html)
