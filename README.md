@@ -67,6 +67,17 @@ After a clean installation of Raspberry OS and the Phoniebox I had a boot time o
 ## GPIO Plan
 ![GPIO](./GPIO-Plan.png)
 
+## Features of use | interesst
+- [x] play music using a rfid tag
+- [x] mp3, wav offline music support
+- [x] web radio support
+- [x] volume control (long press red / blue button)
+- [x] next / previous track (short press red / blue button)
+- [x] toggle play / pause (green button on press)
+- [x] full shutdown (OnOFF Shim + Button)
+- [x] take it with you (power bank)
+- [ ] Tidal support
+
 ## Sources
 
 - [Optimize Boot | raspberry-pi-geek.de](https://www.raspberry-pi-geek.de/ausgaben/rpg/2020/06/die-boot-zeit-von-raspbian-optimieren/2/)
